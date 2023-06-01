@@ -1,0 +1,220 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400;
+    width: 250;
+    border-radius: 25px;
+    background-color: whitesmoke;
+    margin-top: 20;
+    box-shadow: 5px 5px 5px grey inset;   /* h-offset v-offset blur */
+
+}
+body{
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main img{
+    height: 200;
+    width: 200;
+    border-radius: 25px;
+    margin-bottom: 10;
+    background-color: whitesmoke;
+}
+.main button{
+    height: 40;
+    width: 200;
+    background-color:burlywood;
+    border-radius: 25px;
+    border-width: 0px;
+    box-shadow: 5px 5px 5px grey inset;
+    font-size: large;
+}
+.main button:hover{
+    background-color: blue;
+    color: white;
+    
+}
+h2{
+    font-weight: bolder;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}
+h3{
+    color: red;
+    font-weight: bolder;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+.gift-image{
+    height: 100;
+    width: 100;
+    padding-bottom: 3px;
+}
+.giftbutton{
+    border-radius: 25px;
+    background-color: whitesmoke;
+    border-width: 0;
+    margin-top: 10px;
+}
+.giftbutton:hover{
+    background-color: yellow;
+}
+.popup {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+.popup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin: 10% auto;
+    border: 2px solid #9C27B0;
+    width: 50%;
+    height: 250px;
+    font-weight: bolder;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.popup-content button {
+    display: block;
+    margin: 0 auto;
+}
+.show {
+    display: block;
+}
+h1 {
+    color: green;
+}
+.popup-content .yes-btn{
+    height: 40;
+    width: 150;
+    margin-bottom: 10;
+    margin-top: 30;
+    background-color: blue;
+    border-radius: 25px;
+    border-width: 0px;
+    color: white;
+    font-size: large;
+}
+.popup-content .yes-btn:hover{
+    background-color: brown;
+    color: white;
+}
+.popup-text{
+    width: 100%;
+    height: fit-content;
+    background-color: #9C27B0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.ans-popup {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4) ;
+    transform: translate(-50%, -50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.4s, top  0.4s;
+}
+.ans-popup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin: 10% auto;
+    border: 1px solid #888888;
+    width: 60%;
+    height: 80%;
+    font-weight: bolder;
+    border-radius: 20px;
+    border: 5px solid red;
+}
+.ans-show{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+.emoji1{
+    height: 80px;
+    width: 80px;
+    border-radius: 25px;
+    display: none;
+}
+.emoji2{
+    height: 80px;
+    width: 80px;
+    border-radius: 25px;
+    display: none;
+}
+.emoji3{
+    height: 80px;
+    width: 80px;
+    border-radius: 25px;
+    display: none;
+}
+.emoji4{
+    height: 80px;
+    width: 80px;
+    border-radius: 25px;
+    display: none;
+}
+.popup-h2{
+    color: red;
+    font-size: 25px;
+    font-weight: bolder;
+    display: none;
+}
+.popup-last{
+    color: red;
+    font-size: 25px;
+    font-weight: bolder;
+    display: none;
+}
+.emoji1-show{
+    display: flex;
+
+}
+.emoji2-show{
+    display: flex;
+    
+}
+.emoji3-show{
+    display: flex;
+    
+}
+.emoji4-show{
+    display: flex;
+    
+}
+.emoji5-show{
+    display: flex;
+    
+}
+.emoji6-show{
+    display: flex;
+    
+}
+
+@media (max-width: 480px) {
+    .popup-content{
+    width: 80%;
+    }
+}
